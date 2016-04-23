@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:paddingTop="@dimen/layout_padding"
+    android:paddingBottom="@dimen/layout_padding"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/permission_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/permission_name"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/permission_icon"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:gravity="center_vertical"
+        android:textAppearance="?attr/textAppearanceListItem"/>
+    <TextView
+        android:id="@+id/permission_protection_level"
+        android:layout_below="@id/permission_name"
+        android:layout_toRightOf="@id/permission_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+</RelativeLayout>
